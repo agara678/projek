@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Color theme for statusbar -->
+    <meta name="theme-color" content="#2196f3">
+    <!-- Your app title -->
+    <title>My App</title>
+    <!-- Path to Framework7 Library Bundle CSS -->
+    <link rel="stylesheet" href="css/framework7.bundle.min.css">
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="css/my-app.css">
+    <link rel="stylesheet" href="css/framework7-icons.css">
+  </head>
+  <body>
+    <!-- App root element -->
+    <div id="app">
+      <!-- Statusbar overlay -->
+      <div class="statusbar">
+        <div class="panel panel-left panel-reveal">
+      <div class="block">
+        <p><a class="panel-close" id="logout">logout</a></p>
+      </div>
+    </div>
+      </div>     
+      <!-- Your main view, should have "view-main" class -->
+      <div class="view view-main">
+        <!-- Initial Page, "data-name" contains page name -->
+        <div data-name="search" class="page">
+
+          <!-- Top Navbar -->
+            <div class="navbar">
+    <div class="navbar-inner">
+    </div>
+  </div>
+
+          <!-- Bottom Toolbar -->
+          
+
+          <!-- Scrollable page content -->
+          <div class="page-content">
+             <form>      
+      <div class="list inset margin-top inline-labels">
+        <ul>
+          <li class="item-content item-input">
+           <div class="item-inner">
+              <div class="item-input-wrap">
+                <input type="text" name="search" id="cari" placeholder="Search user">
+                <span class="input-clear-button"></span>
+
+              </div>
+              <i class="icon f7-icons">search</i>
+            </div>
+          </li>
+        </ul>
+      </div>      
+    </form> 
+   
+    <div class="block">    
+      <div class="list links-list">
+        <ul id="hasil">
+        </ul>
+      </div>
+    </div>
+
+   
+          </div>
+          <div class="toolbar toolbar-bottom">
+            <div class="toolbar-inner">
+              <!-- Toolbar links -->
+             <div class="toolbar tabbar tabbar-labels toolbar-bottom">
+    <div class="toolbar-inner">
+      <a href="/home/" class="tab-link">
+        <!-- Different icons for iOS and MD themes -->
+        <i class="icon f7-icons if-not-md">home_fill</i>        <!-- Label text -->
+        <span class="tabbar-label">Home</span>
+      </a>
+      <a href="/search/" class="tab-link tab-link-active">
+        <i class="icon f7-icons if-not-md">search</i>
+        <span class="tabbar-label">search</span>
+      </a>
+      <a href="/kamera/" class="tab-link">
+        <i class="icon f7-icons if-not-md">camera</i>
+        <span class="tabbar-label">Upload</span>
+      </a>
+      <a href="/notif/" class="tab-link">
+        <i class="icon f7-icons if-not-md">heart</i>
+        <span class="tabbar-label">notifikasi</span>
+      </a>
+      <a href="/index/" class="tab-link">
+        <i class="icon f7-icons if-not-md">person</i>
+        <span class="tabbar-label">profile</span>
+      </a>
+    </div>
+  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Path to Framework7 Library Bundle JS-->
+    <script type="text/javascript" src="js/framework7.bundle.min.js"></script>
+    <script type="text/javascript" src="js/template7.min.js"></script>
+    <!-- Path to your app js-->
+    <script type="text/javascript" src="js/my-app.js"></script>
+  </body>
+</html>
